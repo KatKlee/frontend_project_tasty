@@ -1,0 +1,1 @@
+import './DishList.module.scss'

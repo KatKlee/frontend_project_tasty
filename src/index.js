@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home/Home';
+import DishList from './pages/dishlist/DishList';
+import DishDetails from './pages/dishdetails/DishDetails';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/dishlist' element={<DishList />} />
+        <Route path='/dishlist/dishdetails:dishid' element={<DishDetails />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
