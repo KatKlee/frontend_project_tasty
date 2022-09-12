@@ -1,7 +1,7 @@
 import instagram from './img/instagram.svg';
 import youtube from './img/youtube.svg';
 import facebook from './img/facebook.svg';
-
+import './Footer.Module.scss'
 
 const Footer = () => {
     return (

@@ -1,27 +1,29 @@
 import { useEffect, useState } from 'react';
-import './Home.module.scss';
+import './Home.Module.scss';
 
 const Home =()=>{
 
-    const [klohaus, setKlohaus] = useState([])
+    const [categorie, setCategorie] = useState([])
     
     useEffect(()=>{
-        fetch('www.themealdb.com/api/json/v1/1/categories.php')
+        fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
         .then(res => res.json())
-        .then(data => console.log(data.categories[0]))
+        .then(data => setCategorie(data.categories))
     },[])
     
     return(
         <main>
             <h1>Or go through our categories</h1>
-            {klohaus && klohaus.map((item)=>{
+            <section>
+            {categorie && categorie.map((item)=>{
                 return(
                     <article>
-                        <h1>{item.strCategory}</h1>
+                        <h2>{item.strCategory}</h2>
                         <img src={item.strCategoryThumb} alt="" />
                     </article>
                 )
             })}
+            </section>
         </main>
     
     )
