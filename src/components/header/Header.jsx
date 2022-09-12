@@ -1,5 +1,6 @@
 import logo from './img/tasty_logo.svg'
 import Searchbar from '../searchbar/Searchbar'
+import './Header.module.scss'
 
 
 const Header = () => {

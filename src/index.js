@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
+import'./index.scss'
 import DishList from './pages/dishlist/DishList';
 import DishDetails from './pages/dishdetails/DishDetails';
 import Header from './components/header/Header';
