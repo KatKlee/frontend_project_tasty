@@ -24,7 +24,6 @@ const Home = () => {
                             <div className='peddingDiv'>
                                 <h2>{item.strCategory}</h2>
                                 <img src={item.strCategoryThumb} alt="" />
-
                             </div>
                         </article></Link>
                     )
