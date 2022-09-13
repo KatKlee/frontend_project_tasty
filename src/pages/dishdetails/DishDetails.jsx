@@ -1,6 +1,6 @@
 import './DishDetails.scss'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -18,13 +18,13 @@ const DishDetails = () => {
     return (
         <>
             {dishdetails && dishdetails.map((item) => {
-                    
+
                 return (
                     <main key={uuidv4()} className='detailsMain'>
                         <img src={item.strMealThumb} alt="food" />
                         <section className='detailsSection'>
                             <article>
-                                <h2>Hier stehen Ingredients</h2>
+                                <h2>Ingredients</h2>
                                 <p>{item.strMeasure1} {item.strIngredient1}</p>
                                 <p>{item.strMeasure2} {item.strIngredient2}</p>
                                 <p>{item.strMeasure3} {item.strIngredient3}</p>
@@ -45,11 +45,11 @@ const DishDetails = () => {
                                 <p>{item.strMeasure18} {item.strIngredient18}</p>
                                 <p>{item.strMeasure19} {item.strIngredient19}</p>
                                 <p>{item.strMeasure20} {item.strIngredient20}</p>
-                                <button>watch on Youtube</button>
+                                <a href={item.strYoutube} target='_blank'><button>Watch on YouTube</button></a>
                             </article>
                             <article>
                                 <h2>{item.strMeal}</h2>
-                                <ul>{item.strInstructions.split('\r\n').map(haus => <li key={uuidv4()}>{haus}</li>)}</ul>
+                                <ul className='detailinstruction'>{item.strInstructions.split('\r\n').map(haus => <li key={uuidv4()}><span>{haus}</span></li>)}</ul>
                             </article>
                         </section>
 
