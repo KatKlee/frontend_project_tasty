@@ -1,11 +1,27 @@
-.header {
+.headerTag {
     text-align: center;
+    margin: 2vh 0;
     h1 {
         color: #FF6E86;
         font-size: 1.7em;
+        margin-bottom: 3vh;
     }
     img {
-        width: 35%;
+        width: 60%;
         margin-bottom: 1.5em;
+        height: 20%;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .headerTag {
+        margin: 0;
+        h1 {
+            font-size: 3.9em;
+        }
+        img {
+            width: 20%;
+        }
+    }
+
+    }

@@ -1,51 +1,45 @@
-.dishListMain {
-    h1 {
-        font-size: 1.5em;
+.detailsMain {
+    background-color: #FF6E86;
+    border-radius: 15px;
+    width: 100%;
+    padding: 0.93em;
+    margin-top: 2vh;
+    color: #fff;
+
+    h2 {
+        margin: 1em 0 0.5em 0;
+    }
+
+    p {
+        line-height: 25px;
+        font-weight: bold;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 10px;
+        border-style: none;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
         color: #FF6E86;
-        margin: 2vh 0;
     }
-}
 
-.dishListSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-
-    .dishListLink {
-        background-color: #FFAC61;
-        border-radius: 15px;
-        min-height: 220px;
-        &:nth-of-type(3),
-        &:nth-of-type(4),
-        &:nth-of-type(7),
-        &:nth-of-type(8),
-        &:nth-of-type(11),
-        &:nth-of-type(12),
-        &:nth-of-type(15),
-        &:nth-of-type(16),
-        &:nth-of-type(19),
-        &:nth-of-type(20){
-            background-color: #FF6E86;
-        }
-        img {
-            border-radius: 10px;
-            width: 100%;
-        }
-        h2 {
-            padding-bottom: 10px;
-            color: #fff;
-            font-size: 1em;
-        }
-
+    img {
+        width: 100%;
     }
-    .articleFlex{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
-        padding: 15px;
+
+    .detailinstruction {
+        padding-left: 20px;
+        span {
+            line-height: 25px;
+            padding-left: -10px;
+        }
     }
 }
 
 
-
+@media only screen and (min-width: 768px) {
+    
+}

@@ -8,3 +8,15 @@
         height: 1.87em;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .socialMedia {
+        padding-top: 5vh;
+        a {
+            padding: 1em;
+        }
+        img {
+            height: 3em;
+        }
+    }
+}
