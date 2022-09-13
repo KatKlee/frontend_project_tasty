@@ -1,7 +1,9 @@
 const Ingredients = () => {
+    
     return (
         <>
-            for (let i =0;  )
+        
         </>
     )
 }
+export default Ingredients
