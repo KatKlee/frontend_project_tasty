@@ -1,10 +1,11 @@
-
+import SearchButton from "../buttonsearch/ButtonSearch"
+import './Searchbar.scss'
 
 const Searchbar = () => {
     return (
-        <div>
+        <div className="Searchbar">
             <input type="text" placeholder="Type something to search" />
-            <button>Search</button>
+            <SearchButton />
             {/* <Link key={props.id} to={/all_beers/${props.id}}><Button>Details</Button></Link> */}
         </div>
     )

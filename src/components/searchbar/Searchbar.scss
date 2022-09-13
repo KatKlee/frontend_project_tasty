@@ -1,0 +1,19 @@
+.Searchbar {
+    margin: 2vh 0;
+    input {
+        background-color: #ffab616e;
+        border: none;
+        color: #fff;
+        border-radius: 7px;
+        padding: 10px 15px;
+        margin-right: 2vw;
+        width: 200px;
+    }
+    input::placeholder {
+        color: #FF6E86;
+        font-size: 11px;
+    }
+
+}
+
+

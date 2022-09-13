@@ -1,4 +1,4 @@
-
+import './ButtonSearch.scss'
 
 const SearchButton =()=> {
     return(
