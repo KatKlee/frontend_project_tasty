@@ -1,4 +1,4 @@
-import '../dishdetails/DishDetails.module.scss'
+import '../dishdetails/DishDetails.scss'
 import { useEffect, useState } from 'react'
 
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import './DishList.module.scss'
+import './DishList.scss'
+import { v4 as uuidv4 } from 'uuid'
 
 const DishList = () => {
     const params = useParams()
@@ -13,13 +14,13 @@ const DishList = () => {
     }, [])
 
     return (
-        <main>
+        <main className='dishListMain'>
             <h1>Everything {`${params.categoryid}`}</h1>
-            <section>
+            <section className='dishListSection'>
                 {dish && dish.map((item) => {
                     return (
-                        <Link key={item.idMeal} to={`/dishlist${params.categoryid}/${item.idMeal}`}>
-                            <article>
+                        <Link className='dishListLink' key={uuidv4()} to={`/dishlist${params.categoryid}/${item.idMeal}`}>
+                            <article className='articleFlex'>
                                 <h2>{item.strMeal}</h2>
                                 <img src={item.strMealThumb} alt="" />
                             </article>

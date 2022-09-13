@@ -1,0 +1,46 @@
+.homeMain {
+    h1 {
+        font-size: 1.5em;
+        color: #FF6E86;
+        margin: 2vh 0;
+    }
+}
+
+.homeSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+    .random {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .homeLink {
+        background-color: #FFAC61;
+        border-radius: 15px;
+        min-height: 150px;
+        &:nth-of-type(3),
+        &:nth-of-type(4),
+        &:nth-of-type(7),
+        &:nth-of-type(8),
+        &:nth-of-type(11),
+        &:nth-of-type(12){
+            background-color: #FF6E86;
+        }
+        img {
+            padding: 10px;
+            width: 100%;
+        }
+        h2 {
+            padding-top: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 1em;
+        }
+    }
+}
+
+
+

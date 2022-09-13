@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Home.module.scss';
+import './Home.scss';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const Home = () => {
 
@@ -13,18 +15,18 @@ const Home = () => {
     }, [])
 
     return (
-        <main>
+        <main className='homeMain'>
             <h1>Or go through our categories</h1>
-            <section>
+            <section className='homeSection'>
                 {categorie && categorie.map((item) => {
                     return (
-                        <Link key={item.idCategory} to={`/dishlist${item.strCategory}`}><article>
+                        <Link className='homeLink' key={uuidv4()} to={`/dishlist${item.strCategory}`}><article>
                             <h2>{item.strCategory}</h2>
                             <img src={item.strCategoryThumb} alt="" />
                         </article></Link>
                     )
                 })}
-                <article id='random'>
+                <article className='random homeLink'>
                     <Link /* key={item.idMeal} */ to='/random'><h2>Random</h2></Link>
                 </article>
             </section>
