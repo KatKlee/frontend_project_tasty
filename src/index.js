@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import './index.scss'
 import DishList from './pages/dishlist/DishList';
 import DishDetails from './pages/dishdetails/DishDetails';
+import DishDetailsRandom from './pages/dishdetailsrandom/DishDetailsRandom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
@@ -19,6 +20,7 @@ root.render(
         <Route path='/' element={<Home />} />
         <Route path='/dishlist:categoryid' element={<DishList />} />
         <Route path='/dishlist:categoryid/:dishid' element={<DishDetails />} />
+        <Route path='/random' element={<DishDetailsRandom />} />
       </Routes>
       <Footer />
     </BrowserRouter>

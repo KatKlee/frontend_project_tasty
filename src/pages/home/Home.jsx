@@ -25,7 +25,7 @@ const Home = () => {
                     )
                 })}
                 <article id='random'>
-                    <Link to='/dishlist/dishdetails:dishid'><h2>Random</h2></Link>
+                    <Link /* key={item.idMeal} */ to='/random'><h2>Random</h2></Link>
                 </article>
             </section>
         </main>

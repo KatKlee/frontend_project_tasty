@@ -1,14 +1,14 @@
-import './DishDetails.module.scss'
+import '../dishdetails/DishDetails.module.scss'
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+
 
 // instractions hat Unterteilungen  --> dynamisch Listenpunkte erstellen 
-const DishDetails = () => {
-    const params = useParams()
+const DishDetailsRandom = () => {
+
     const [dishdetails, setDishdetails] = useState([])
 
     useEffect(() => {
-        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.dishid}`)
+        fetch('https://www.themealdb.com/api/json/v1/1/random.php')
             .then(res => res.json())
             .then(data => setDishdetails(data.meals))
     }, [])
@@ -37,4 +37,4 @@ const DishDetails = () => {
     )
 }
 
-export default DishDetails
+export default DishDetailsRandom

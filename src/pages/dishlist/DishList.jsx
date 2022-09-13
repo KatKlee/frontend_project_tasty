@@ -18,7 +18,7 @@ const DishList = () => {
             <section>
                 {dish && dish.map((item) => {
                     return (
-                        <Link key={item.idMeal} to={`/dishlist${params.categoryid}/dishdetails${item.strMeal}`}>
+                        <Link key={item.idMeal} to={`/dishlist${params.categoryid}/${item.idMeal}`}>
                             <article>
                                 <h2>{item.strMeal}</h2>
                                 <img src={item.strMealThumb} alt="" />
