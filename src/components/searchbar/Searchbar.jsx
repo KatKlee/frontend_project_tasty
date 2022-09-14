@@ -1,4 +1,3 @@
-
 import './Searchbar.scss'
 
 const Searchbar = () => {
@@ -17,6 +16,5 @@ const Searchbar = () => {
         </div>
     )
 }
-
 
 export default Searchbar 
