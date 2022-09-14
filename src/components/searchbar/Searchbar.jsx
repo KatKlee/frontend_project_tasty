@@ -26,13 +26,8 @@ const Searchbar = () => {
     const onSearch = (searchTerm) => {
         console.log('search', searchTerm);
         navigate(`/searchdishlist/${searchTerm}`)
-        /* fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data.meals)
-                setResultDish(data.meals)
-            })
-        setHeadline(`Everything ${inputValue}`) */
+        setInputValue('')
+        /* inputValue = ('') */
     }
 
 
@@ -40,22 +35,6 @@ const Searchbar = () => {
         <div className="Searchbar">
             <input type="text" value={inputValue} onChange={onChange} placeholder="Type something to search" />
             <button onClick={() => onSearch(inputValue)} className="searchBtn" onMouseOver={MouseOver} onMouseOut={MouseOut}>Search</button>
-
-
-            {/* <main key={uuidv4()} className='dishListMain'>
-                <h1>{headline}</h1>
-                {resultDish && resultDish.map((item) => {
-                    return (
-                        <SearchDishList
-
-                            inputValue={inputValue}
-                            mealname={item.strMeal}
-                            image={item.strMealThumb}
-                            idMeal={item.idMeal}
-                        />
-                    )
-                })}
-            </main> */}
         </div >
 
     )

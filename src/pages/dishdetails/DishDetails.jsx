@@ -21,6 +21,7 @@ const DishDetails = () => {
 
                 return (
                     <main key={uuidv4()} className='detailsMain'>
+                        <h2>{item.strMeal}</h2>
                         <img src={item.strMealThumb} alt="food" />
                         <section className='detailsSection'>
                             <article className='a'>
@@ -48,7 +49,7 @@ const DishDetails = () => {
                                 <a href={item.strYoutube} target='_blank'><button className='youTubeBtn'>Watch on YouTube</button></a>
                             </article>
                             <article className='b'>
-                                <h2>{item.strMeal}</h2>
+                                <h2>How to prepare</h2>
                                 <ul className='detailinstruction'>{item.strInstructions.split(['\r\n\r']).map(haus => <li key={uuidv4()}><span>{haus}</span></li>)}</ul>
                             </article>
                         </section>

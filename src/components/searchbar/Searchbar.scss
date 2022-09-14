@@ -1,57 +1,68 @@
 .Searchbar {
-    margin: 3vh 0;
+    margin: 0 0 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     input {
         background-color: #ffab616e;
         border: none;
-        color: #fff;
+        color: #FF6E86;
         border-radius: 7px;
-        padding: 5px 15px;
+        padding: 10px 15px;
         margin-right: 2vw;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;   
+        margin: 10px auto; 
+        width: 80%;
     }
     input::placeholder {
-        color: #FF6E86;
-        font-size: 0.6em;
+        color: #ff6e8669;
+        font-size: 1em;
+    }
+    button{
+        background-color: #FF6E86;
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        font-weight: bold;
+        padding: 10px 15px;
+        font-size: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
     }
 
 }
 
-button{
-    background-color: #FF6E86;
-    color: #fff;
-    border: none;
-    border-radius: 7px;
-    font-weight: bold;
-    padding: 5px 15px;
-    font-size: 12px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
-}
 
 @media only screen and (min-width: 768px) {
     .Searchbar {
         margin-bottom: 15vh;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px ;
         input {
             border-radius: 7px;
             padding: 15px 30px;
             width: 390px;
             height: 60px;
             font-size: 1.5em;
+            display: inline;
+            margin: 0;
         }
         input::placeholder {
             font-size: 1em;
         }
-    }
-    button{
-        color: #fff;
-        border: none;
-        border-radius: 7px;
-        font-weight: bold;
-        padding: 15px 30px;
-        width: 170px;
-        height: 60px;
-        font-size: 25px;
-        &:hover{
+        button{
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+            padding: 15px 30px;
+            width: 170px;
+            height: 60px;
+            font-size: 25px;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
         }
     }
 }
