@@ -49,7 +49,7 @@ const DishDetailsRandom = () => {
                             </article>
                             <article className='b'>
                                 <h2>{item.strMeal}</h2>
-                                <ul className='detailinstruction'>{item.strInstructions.split(['\r\n\r ']).map(haus => <li key={uuidv4()}><span>{haus}</span></li>)}</ul>
+                                <ul className='detailinstruction'>{item.strInstructions.split(['\r\n']).map(haus => <li key={uuidv4()}><span>{haus}</span></li>)}</ul>
                             </article>
                         </section>
 
