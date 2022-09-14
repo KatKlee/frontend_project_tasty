@@ -1,11 +1,19 @@
-import SearchButton from "../buttonsearch/ButtonSearch"
+
 import './Searchbar.scss'
 
 const Searchbar = () => {
+
+    const MouseOver =(event)=>{
+        event.target.style.background = '#FFAC61';
+    }
+    const MouseOut =(event)=>{
+        event.target.style.background = '#FF6E86';
+    }
+
     return (
         <div className="Searchbar">
             <input type="text" placeholder="Type something to search" />
-            <SearchButton />
+            <button className="searchBtn" onMouseOver={MouseOver} onMouseOut={MouseOut}>Search</button>
         </div>
     )
 }
