@@ -14,7 +14,8 @@
     .dishListLink {
         background-color: #FFAC61;
         border-radius: 15px;
-        min-height: 220px;
+        min-height: 25vh;
+        box-shadow: rgba(50, 50, 93, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         &:nth-of-type(3),
         &:nth-of-type(4),
         &:nth-of-type(7),
@@ -24,11 +25,18 @@
         &:nth-of-type(15),
         &:nth-of-type(16),
         &:nth-of-type(19),
-        &:nth-of-type(20){
+        &:nth-of-type(20),
+        &:nth-of-type(23),
+        &:nth-of-type(24),
+        &:nth-of-type(27),
+        &:nth-of-type(28),
+        &:nth-of-type(31),
+        &:nth-of-type(32),
+        &:nth-of-type(35)
+        {
             background-color: #FF6E86;
         }
         img {
-            border-radius: 10px;
             width: 100%;
         }
         h2 {
@@ -44,6 +52,45 @@
         justify-content: flex-end;
         height: 100%;
         padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .dishListMain {
+        h1 {
+            font-size: 2.5em;
+            margin: 3vh 0;
+        }
+    }
+    
+    .dishListSection {
+        gap: 3.5em;
+    
+        .dishListLink {
+        
+            img {
+                width: 100%;
+                padding: 30px;
+            }
+            h2 {
+                padding: 0 30px;
+                color: #fff;
+                font-size: 2.8em;
+            }
+    
+        }
+        .articleFlex{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            padding: 15px;
+
+            .paddingDiv{
+            margin-top: 40px;
+
+            }
+        }
     }
 }
 

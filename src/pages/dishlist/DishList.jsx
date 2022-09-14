@@ -21,8 +21,10 @@ const DishList = () => {
                     return (
                         <Link className='dishListLink' key={uuidv4()} to={`/dishlist${params.categoryid}/${item.idMeal}`}>
                             <article className='articleFlex'>
-                                <h2>{item.strMeal}</h2>
-                                <img src={item.strMealThumb} alt="" />
+                                <div className='paddingDiv'>
+                                    <h2>{item.strMeal}</h2>
+                                    <img src={item.strMealThumb} alt="" />
+                                </div>
                             </article>
                         </Link>
                     )

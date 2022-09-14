@@ -21,8 +21,10 @@ const Home = () => {
                 {categorie && categorie.map((item) => {
                     return (
                         <Link className='homeLink' key={uuidv4()} to={`/dishlist${item.strCategory}`}><article>
-                            <h2>{item.strCategory}</h2>
-                            <img src={item.strCategoryThumb} alt="" />
+                            <div className='peddingDiv'>
+                                <h2>{item.strCategory}</h2>
+                                <img src={item.strCategoryThumb} alt="" />
+                            </div>
                         </article></Link>
                     )
                 })}
