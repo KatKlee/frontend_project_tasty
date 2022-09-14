@@ -23,7 +23,7 @@ const DishDetails = () => {
                     <main key={uuidv4()} className='detailsMain'>
                         <img src={item.strMealThumb} alt="food" />
                         <section className='detailsSection'>
-                            <article>
+                            <article className='a'>
                                 <h2>Ingredients</h2>
                                 <p>{item.strMeasure1} {item.strIngredient1}</p>
                                 <p>{item.strMeasure2} {item.strIngredient2}</p>
@@ -45,9 +45,9 @@ const DishDetails = () => {
                                 <p>{item.strMeasure18} {item.strIngredient18}</p>
                                 <p>{item.strMeasure19} {item.strIngredient19}</p>
                                 <p>{item.strMeasure20} {item.strIngredient20}</p>
-                                <a href={item.strYoutube} target='_blank'><button>Watch on YouTube</button></a>
+                                <a href={item.strYoutube} target='_blank'><button className='youTubeBtn'>Watch on YouTube</button></a>
                             </article>
-                            <article>
+                            <article className='b'>
                                 <h2>{item.strMeal}</h2>
                                 <ul className='detailinstruction'>{item.strInstructions.split('\r\n').map(haus => <li key={uuidv4()}><span>{haus}</span></li>)}</ul>
                             </article>

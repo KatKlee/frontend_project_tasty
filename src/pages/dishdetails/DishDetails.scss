@@ -31,14 +31,44 @@
         /* border-radius: 15px; */
 
     }
-
     .detailinstruction {
         padding-left: 20px;
-
         span {
             line-height: 25px;
             padding-left: -10px;
         }
+    }
+}
 
+
+@media only screen and (min-width: 768px){
+    .detailsMain {
+        padding: 3em;
+        h2 {
+            font-size: 2.5em;
+        }
+        p, li {
+            font-size: 1.5em;
+            line-height: 5vh;
+        }
+        a{
+            .youTubeBtn {
+                margin-top: 3vh;
+                width: 100%;
+                font-size: 1.5em;
+            }
+        }
+    
+        .detailsSection {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 3em;
+        }
+        .a {
+            grid-column-start: 2;
+        }
+        .b {
+            grid-row-start: 1;
+        }
     }
 }

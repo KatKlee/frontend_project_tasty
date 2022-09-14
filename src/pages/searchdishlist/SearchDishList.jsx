@@ -11,18 +11,18 @@ const SearchDishList = () => {
     const [dish, setDish] = useState([])
 
     useEffect(() => {
-        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${''}`)
             .then(res => res.json())
             .then(data => setDish(data.meals))
     }, [])
 
     return (
         <main className='dishListMain'>
-            <h1>Everything {inputValue}</h1>
+            <h1>Everything {}</h1>
             <section className='dishListSection'>
                 {dish && dish.map((item) => {
                     return (
-                        <Link className='dishListLink' key={uuidv4()} to={`/dishlist${inputValue}/${item.idMeal}`}>
+                        <Link className='dishListLink' key={uuidv4()} to={`/dishlist${''}/${item.idMeal}`}>
                             <article className='articleFlex'>
                                 <div className='paddingDiv'>
                                     <h2>{item.strMeal}</h2>
