@@ -22,7 +22,7 @@ root.render(
         <Route path='/dishlist:categoryid' element={<DishList />} />
         <Route path='/dishlist:categoryid/:dishid' element={<DishDetails />} />
         <Route path='/random' element={<DishDetailsRandom />} />
-        <Route path='/searchdishlist:inputValue' element={<SearchDishList />} />
+        <Route path='/searchdishlist/:inputValue' element={<SearchDishList />} />
       </Routes>
       <Footer />
     </BrowserRouter>

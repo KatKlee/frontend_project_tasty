@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Params, useParams } from 'react-router-dom';
+import { Params, useNavigate, useParams } from 'react-router-dom';
 import './Searchbar.scss'
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 
 const Searchbar = () => {
     const params = useParams()
+    const navigate = useNavigate()
 
     const MouseOver = (event) => {
         event.target.style.background = '#FFAC61';
@@ -24,6 +25,7 @@ const Searchbar = () => {
 
     const onSearch = (searchTerm) => {
         console.log('search', searchTerm);
+        navigate(`/searchdishlist/${searchTerm}`)
         /* fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
             .then(res => res.json())
             .then(data => {
@@ -37,7 +39,7 @@ const Searchbar = () => {
     return (
         <div className="Searchbar">
             <input type="text" value={inputValue} onChange={onChange} placeholder="Type something to search" />
-            <Link to={`/searchdishlist${inputValue}`}><button onClick={() => onSearch(inputValue)} className="searchBtn" onMouseOver={MouseOver} onMouseOut={MouseOut}>Search</button></Link>
+            <button onClick={() => onSearch(inputValue)} className="searchBtn" onMouseOver={MouseOver} onMouseOut={MouseOut}>Search</button>
 
 
             {/* <main key={uuidv4()} className='dishListMain'>
