@@ -8,6 +8,7 @@ import DishDetails from './pages/dishdetails/DishDetails';
 import DishDetailsRandom from './pages/dishdetailsrandom/DishDetailsRandom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import SearchDishList from './pages/searchdishlist/SearchDishList'
 
 import reportWebVitals from './reportWebVitals';
 
@@ -21,6 +22,7 @@ root.render(
         <Route path='/dishlist:categoryid' element={<DishList />} />
         <Route path='/dishlist:categoryid/:dishid' element={<DishDetails />} />
         <Route path='/random' element={<DishDetailsRandom />} />
+        <Route path='/searchdishlist:inputValue' element={<SearchDishList />} />
       </Routes>
       <Footer />
     </BrowserRouter>
