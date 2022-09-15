@@ -53,6 +53,15 @@
     .homeSection{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .homeLink {
+        background-color: #FFAC61;
+        &:nth-of-type(odd) {
+            background-color: #FFAC61;
+        }
+        &:nth-of-type(even) {
+            background-color: #FF6E86;
+        }
+    }
     
 }
 
