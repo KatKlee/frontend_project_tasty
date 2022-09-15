@@ -3,18 +3,27 @@ import { Params, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../dishlist/DishList.scss'
 import { useState, useEffect } from 'react';
-import Searchbar from '../../components/searchbar/Searchbar'
+
 
 
 const SearchDishList = () => {
     const params = useParams()
     const [dish, setDish] = useState([])
 
+
     useEffect(() => {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${params.inputValue}`)
             .then(res => res.json())
             .then(data => setDish(data.meals))
-    }, [])
+
+        }, [])
+        
+        /* const result = dish.strMeal.search(params.inputValue)
+        if(result === -1){
+            
+        } */
+
+    
 
     return (
         <main className='dishListMain'>

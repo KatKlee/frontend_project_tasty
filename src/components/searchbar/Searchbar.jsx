@@ -16,8 +16,7 @@ const Searchbar = () => {
     }
 
     const [inputValue, setInputValue] = useState('')
-    /*     const [resultDish, setResultDish] = useState([])
-        const [headline, setHeadline] = useState('') */
+        
 
     const onChange = (e) => {
         setInputValue(e.target.value);
@@ -27,8 +26,9 @@ const Searchbar = () => {
         console.log('search', searchTerm);
         navigate(`/searchdishlist/${searchTerm}`)
         setInputValue('')
-        /* inputValue = ('') */
+        
     }
+
 
 
     return (
