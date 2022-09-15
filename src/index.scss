@@ -22,8 +22,16 @@ code {
     monospace;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
+  body {
+    padding: 2em 5em;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
   body {
     padding: 3em 12em;
   }
 }
+
+

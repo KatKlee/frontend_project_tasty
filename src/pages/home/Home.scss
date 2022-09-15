@@ -1,6 +1,5 @@
 .homeMain {
     h1 {
-        text-align: center;
         font-size: 1.3em;
         color: #FF6E86;
         margin: 2vh 0;
@@ -44,9 +43,20 @@
     }
 }
 
-
-
 @media only screen and (min-width: 768px) {
+    .homeMain {
+        h1 {
+            text-align: left;
+            font-size: 2em;
+        }
+    }
+    .homeSection{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (min-width: 1180px) {
     .homeMain {
         h1 {
             text-align: left;
@@ -74,3 +84,5 @@
         }
     }
 }
+
+
