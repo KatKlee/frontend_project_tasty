@@ -16,18 +16,20 @@ const SearchDishList = () => {
             .then(res => res.json())
             .then(data => setDish(data.meals))
 
-        }, [])
-        
-        /* const result = dish.strMeal.search(params.inputValue)
-        if(result === -1){
             
-        } */
+        }, [dish])
 
-    
-
+        const result =()=>{
+            if(!dish){
+                return<h1>Sorry, but no recipe was found for "{params.inputValue}" </h1>
+            }else{
+                return<h1>Everything with "{params.inputValue}"</h1>
+            }
+        }
+        
     return (
         <main className='dishListMain'>
-            <h1>Everything with {params.inputValue}</h1>
+            <div>{result()}</div>
             <section className='dishListSection'>
                 {dish && dish.map((item) => {
                     return (
