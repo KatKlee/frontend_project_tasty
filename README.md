@@ -11,7 +11,7 @@ Zu meinen Aufgaben bei diesem Projekt zählten u.a:
 – Sicherstellung der Einhaltung der Designvorgaben  
 – Das Umsetzen der Funktionalitäten mit JavaScript (API, "Auslesen" der Daten)
 
-----------
+---
 
 *A static website for cooking recipes with ideas and inspirations for a culinary experience. This responsive application can be used both on mobile and desktop.*
 
