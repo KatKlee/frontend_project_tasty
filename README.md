@@ -2,6 +2,9 @@
 
 Eine statische Website für Kochrezepte mit Ideen und Inspirationen für ein kulinarisches Erlebnis. Diese responsive Anwendung kann sowohl Mobile als auch am Desktop benutzt werden.
 
+Try:  
+https://supercode-tasty-app.onrender.com
+
 Das Besondere an diesem Projekt war die Verwendung von Daten aus einer API. Ebenfalls das Umsetzen einer Suchfunktion, mit der Rezepte nach Kategorien oder Zutaten aus dieser API gefiltert werden können.
 
 In Kollaboration haben wir das Projekt mit html, scss, git/github und reactJS entwickelt.
@@ -14,6 +17,9 @@ Zu meinen Aufgaben bei diesem Projekt zählten u.a:
 /
 
 *A static website for cooking recipes with ideas and inspirations for a culinary experience. This responsive application can be used both on mobile and desktop.*
+
+*Try:  
+https://supercode-tasty-app.onrender.com*
 
 *A special part of this project was the use of data from an API. Also the realisation of a search function, with which recipes can be filtered according to categories or ingredients from this API.*
 
