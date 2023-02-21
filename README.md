@@ -1,6 +1,6 @@
 ## Tasty
 
-Eine statische Website für Kochrezepte mit Ideen und Inspirationen für ein kulinarisches Erlebnis. Diese responsive Anwendung kann sowohl Mobile als auch am Desktop benutzt werden.
+Eine Website für Kochrezepte mit Ideen und Inspirationen für ein kulinarisches Erlebnis. Diese responsive Anwendung kann sowohl Mobile als auch am Desktop benutzt werden.
 
 Try:  
 https://supercode-tasty-app.onrender.com
@@ -16,7 +16,7 @@ Zu meinen Aufgaben bei diesem Projekt zählten u.a:
 
 /
 
-*A static website for cooking recipes with ideas and inspirations for a culinary experience. This responsive application can be used both on mobile and desktop.*
+*A website for cooking recipes with ideas and inspirations for a culinary experience. This responsive application can be used both on mobile and desktop.*
 
 *Try:  
 https://supercode-tasty-app.onrender.com*
